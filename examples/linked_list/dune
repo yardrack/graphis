@@ -1,0 +1,5 @@
+(executable
+ (name example)
+ (flags
+  (:standard -w -30-69))
+ (libraries graphis))

@@ -1,0 +1,45 @@
+digraph graphis {
+graph [bgcolor="transparent"];
+edge [color="gray20"];
+node [color="gray20", fontcolor="gray20"];
+rankdir=TB;
+{ rank=source;
+root_0 [label="{ value:cycle | . }" shape="record" style="filled" fillcolor="khaki1"];
+root_1 [label="{ value:tree | . }" shape="record" style="filled" fillcolor="khaki1"];
+root_2 [label="{ value:float_array | . }" shape="record" style="filled" fillcolor="khaki1"];
+root_3 [label="{ value:array | . }" shape="record" style="filled" fillcolor="khaki1"];
+root_4 [label="{ value:list | . }" shape="record" style="filled" fillcolor="khaki1"];
+root_5 [label="{ value:float | . }" shape="record" style="filled" fillcolor="khaki1"];
+root_6 [label="{ value:int | 13 }" shape="record" style="filled" fillcolor="khaki1"];
+}
+root_0 -> g1_n12:head;
+root_1 -> g1_n10:head;
+root_2 -> g1_n9:head;
+root_3 -> g1_n5:head;
+root_4 -> g1_n2:head;
+root_5 -> g1_n1:head;
+g1_n12 [label="{ <head> tag:0 | <f0> 1 | <f1> . }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n12:f1 -> g1_n13:head;
+g1_n13 [label="{ <head> tag:0 | <f0> 2 | <f1> . }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n13:f1 -> g1_n14:head;
+g1_n14 [label="{ <head> tag:0 | <f0> 3 | <f1> . }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n14:f1 -> g1_n12:head;
+g1_n10 [label="{ <head> tag:1 | <f0> . | <f1> . }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n10:f0 -> g1_n11:head;
+g1_n10:f1 -> g1_n11:head;
+g1_n11 [label="{ <head> tag:0 | <f0> 7 }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n9 [label="{ <head> tag:254 | <f0> 1 | <f1> 2 | <f2> 3 }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n5 [label="{ <head> tag:0 | <f0> . | <f1> . | <f2> . }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n5:f0 -> g1_n6:head;
+g1_n5:f1 -> g1_n7:head;
+g1_n5:f2 -> g1_n8:head;
+g1_n8 [label="{ <head> tag:252 | <f0> string:c }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n7 [label="{ <head> tag:252 | <f0> string:b }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n6 [label="{ <head> tag:252 | <f0> string:a }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n2 [label="{ <head> tag:0 | <f0> 1 | <f1> . }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n2:f1 -> g1_n3:head;
+g1_n3 [label="{ <head> tag:0 | <f0> 2 | <f1> . }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n3:f1 -> g1_n4:head;
+g1_n4 [label="{ <head> tag:0 | <f0> 3 | <f1> 0 }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+g1_n1 [label="{ <head> tag:253 | <f0> 42 }" shape="record" style="filled,rounded" fillcolor="aliceblue"];
+}

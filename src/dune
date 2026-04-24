@@ -1,0 +1,10 @@
+(library
+ (name graphis)
+ (public_name graphis)
+ (libraries unix)
+ (flags
+  (:standard -w -30))
+ (modules graphis heap dot))
+
+(documentation
+ (package graphis))

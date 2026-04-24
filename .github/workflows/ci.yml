@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ocaml/setup-ocaml@v3
+        with:
+          ocaml-compiler: 5.1.x
+      - run: opam install . --deps-only --with-test --with-doc
+      - run: opam install ocamlformat
+      - run: opam exec -- dune fmt --check
+      - run: opam exec -- dune build @install @runtest @doc
+      - run: opam lint graphis.opam

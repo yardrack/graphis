@@ -1,0 +1,5 @@
+(executable
+ (name bench_graphis)
+ (flags
+  (:standard -w -69))
+ (libraries graphis unix))

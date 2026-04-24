@@ -1,0 +1,30 @@
+# dune / opam build outputs
+/_build/
+/_opam/
+/.opam-switch/
+*.install
+
+# generated graph dumps
+*.dot
+*.svg
+*.sv
+!docs/
+!docs/readme-graph.dot
+!docs/readme-graph.svg
+
+# ocaml tooling
+.merlin
+.utop
+*.annot
+*.cmt
+*.cmti
+
+# coverage / profiling
+*.coverage
+*.prof
+
+# editor and local runtime state
+.direnv/
+.env
+*.swp
+*~

@@ -1,0 +1,5 @@
+(test
+ (name test_graphis)
+ (flags
+  (:standard -w -30))
+ (libraries graphis))
